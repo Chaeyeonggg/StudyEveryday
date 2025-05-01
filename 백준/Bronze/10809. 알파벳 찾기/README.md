@@ -52,9 +52,9 @@ int main(void) {
             }
         }
 }
-
-
 ```
+
+
 
 처음에 외부 for문을 for (int i=0; i < alphabet(S); i++)로 작성했다.
 
