@@ -28,3 +28,34 @@
 
 <p>만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.</p>
 
+### 내가 몰랐던 부분
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+    char S[100];
+    scanf("%s", S);
+
+    char alphabet[26] = { 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z' };
+
+        int count = 0;
+       
+        for (int i = 0;i < 26;i++) {
+            for (int j = 0;j < strlen(S);j++) {
+                if (alphabet[i] == S[j]) {
+                    printf("%d ", j);
+                    break;
+                }
+                if (j == strlen(S)-1) {
+                    printf("-1 ");
+                    break;
+                }
+                
+            }
+        }
+}
+
+
+```
