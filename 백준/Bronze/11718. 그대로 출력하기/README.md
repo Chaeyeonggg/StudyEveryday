@@ -72,5 +72,5 @@ while (fgets(S, sizeof(S), stdin) != EOF)
 while (fgets(S, sizeof(S), stdin) != NULL)
 ```
 
-참고로, getchar()나 scanf()는 정수나 문자, EOF를 반환하기 때문에 != EOF로 비교가 가능하다.
+참고로, `getchar()`나 `scanf()`는 정수나 문자, EOF를 반환하기 때문에 `!= EOF`로 비교가 가능하다.
 
