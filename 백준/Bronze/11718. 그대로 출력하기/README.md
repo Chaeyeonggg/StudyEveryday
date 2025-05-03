@@ -61,6 +61,7 @@
 
 ```c
 while (fgets(S, sizeof(S), stdin) != EOF)
+```
 
 하지만 에러가 발생했다.
 왜냐하면 fgets()의 반환값은 EOF가 아니라 문자열 포인터(char*) 또는 NULL이기 때문이다.
@@ -69,6 +70,7 @@ while (fgets(S, sizeof(S), stdin) != EOF)
 
 ```c
 while (fgets(S, sizeof(S), stdin) != NULL)
+```
 
 참고로, getchar()나 scanf()는 정수나 문자, EOF를 반환하기 때문에 != EOF로 비교가 가능하다.
 
